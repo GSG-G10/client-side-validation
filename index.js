@@ -78,7 +78,8 @@ const checkPasswordConfirmation = () => {
         displayError(passwordConfirmError, "");
         blackBorder(confirmPasswordInput);
         blackBorder(passwordInput);
-
+        return true;
+        
     }
 };
 
