@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Oswald", sans-serif;
+  --main-color: #db473f;
+  --title-color: #6f2108;
+}
+.container {
+  height: 100vh;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.image-box {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.image {
+  width: 100%;
+}
+.form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.form-title {
+  color: var(--title-color);
+  font-size: 3rem;
+  font-weight: 300;
+}
+.signup-form {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-lable {
+  text-align: center;
+  width: 70%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.form-lable-title {
+  font-weight: 300;
+  height: 50%;
+  align-self: flex-start;
+  color: var(--title-color);
+}
+.input-box {
+  border: 2px solid var(--title-color);
+  border-radius: 25px;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.form-input {
+  border: none;
+  width: 90%;
+  height: 100%;
+  outline: none;
+}
+.show-password,
+.hide-password,
+.show-confirm-password,
+.hide-confirm-password {
+  display: none;
+}
+.open-eye,
+.closed-eye {
+  color: var(--title-color);
+  font-size: 1.4rem;
+  width: 10%;
+  cursor: pointer;
+}
+.form-input::placeholder {
+  font-size: 0.9rem;
+  color: var(--title-color);
+  opacity: 0.5;
+}
+.form-conditions {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--title-color);
+}
+.form-conditions-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-conditions-list-item {
+  align-self: flex-start;
+}
+.form-btn-submit {
+  width: 35%;
+  height: 3rem;
+  background: none;
+  border: 2px solid var(--title-color);
+  border-radius: 5px;
+}
