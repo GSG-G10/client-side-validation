@@ -10,9 +10,7 @@ form.addEventListener("submit", function(event) {
     event.preventDefault();
   }
 
-  if (
-    password.validity.patternMismatch ||
-    confirmPassword.validity.patternMismatch
+  if (password.validity.patternMismatch || confirmPassword.validity.patternMismatch
   ) {
     error.innerText =
       "Password must contain at least eight characters, including one letter and one number";
